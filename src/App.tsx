@@ -9,10 +9,10 @@ export function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <BrowserRouter>
-        <header className="flex justify-between items-center border-b p-4">
+        <header className="w-[37.5rem] mx-auto flex justify-between items-center py-8 px-4">
           <nav className="space-x-6">
-            <Link to="/">Home</Link>
-            <Link to={routes.createUser}>Criar usuário</Link>
+            <Link to="/">Dashboard</Link>
+            <Link to={routes.profile}>Profile</Link>
           </nav>
           <ThemeSwitcher />
         </header>
